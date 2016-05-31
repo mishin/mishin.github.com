@@ -9,14 +9,14 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Joshua Lande
+title:            Nikolay Mishin
 tagline:          'Data Science, Apache Pig, Hadoop, Blogging, Tweets, Astrophysics'
-url:              http://www.joshualande.com
-shorturl:         joshualande.com
+url:              http://mishin.narod.ru
+shorturl:         mishin.narod.ru
 
 author:
-  name:           'Joshua Lande'
-  url:            https://twitter.com/joshualande
+  name:           'Nikolay Mishin'
+  url:            https://twitter.com/nmishin
 
 paginate:         1
 
@@ -24,7 +24,7 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           github.com/joshualande/joshualande.github.io
+  repo:           github.com/mishin/mishin.github.com
 
 # This is the list of pages to include in the header of the website.
 pages_list:       
