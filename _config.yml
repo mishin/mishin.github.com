@@ -1,38 +1,41 @@
 # Dependencies
 markdown:         redcarpet
-redcarpet:
-  extensions: ["tables"]
-
-pygments:         true
+highlighter:      pygments
+#highlighter:      rouge
 
 # Permalinks
 permalink:        pretty
 
 # Setup
-title:            Nikolay Mishin
-tagline:          'Data Science, Apache Pig, Hadoop, Blogging, Tweets, Astrophysics'
-url:              http://mishin.narod.ru
-shorturl:         mishin.narod.ru
-
+title:            Fabian Kostadinov
+#tagline:          None
+url:              http://fabian-kostadinov.github.io
+paginate:         5
+baseurl:          /
 author:
-  name:           'Nikolay Mishin'
-  url:            https://twitter.com/nmishin
+  name:           Fabian Kostadinov
+  url:            http://fabian-kostadinov.github.io
+  email:          none@none.com
+  
+#excerpt_separator: <!--more-->
+excerpt_separator: <span class="more"></span>
 
-paginate:         1
+exclude:          [_ignore]
 
+# Don't forget to add these to sitemap.xml
+pages_list:
+  ABOUT:          '/about'
+  ARCHIVE:        '/archive'
+  FEED:           '/atom.xml'
+  
 # Custom vars
 version:          1.0.0
+github:           
+  repo:           https://github.com/fabian-kostadinov
+  
+comments:
+  provider:       disqus
+  disqus:
+    short_name:   fabian-kostadinov
 
-github:
-  repo:           github.com/mishin/mishin.github.com
-
-# This is the list of pages to include in the header of the website.
-pages_list:       
-  About: '/about/'
-  Archive: '/archive/'
-  Feed: '/atom.xml'
-
-# Allow URL Redirects: 
-#  * https://help.github.com/articles/redirects-on-github-pages
-gems:
-  - jekyll-redirect-from
+timezone:         Europe/Zurich

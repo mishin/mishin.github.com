@@ -2,32 +2,40 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
 
   {% include head.html %}
-  {% include google_analytics.html %}
 
   <body>
-
+	
     <div class="container content">
       <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">{{ site.title }}</a>
-
-          {% for page in site.pages_list %}
-              &nbsp;&nbsp;&nbsp;<small><a href="{{ page[1]  }}">{{ page[0] }}</a></small>
-          {% endfor %}
-
+	    <a href="{{ site.baseurl }}" title="Home">
+		  <img class="masthead-logo" src="/public/img/logo_64x64.png" alt="logo">	
+		</a>
+		
+		<h3 class="masthead-title">
+		  <a href="{{ site.baseurl }}" title="Home">{{ site.title }}</a>
+          <!-- <small>{{ site.tagline }}</small> -->
         </h3>
-      </div>
+		
+	  </div>
 
+	  <nav role="navigation" class="header-nav">
+		<span class="navigation-container">
+		    {% for page in site.pages_list %}
+		    <span class="navigation-item"><a href="{{ page[1]  }}">{{ page[0] }}</a></span>
+		    {% endfor %}
+		</span>
+	  </nav>
+	  
       {{ content }}
-
-      {% include comments.html %}
-
+	  
       <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
-        </p>
+		<p class="footer-inside-left">&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
       </div>
     </div>
-
+	
+	<span class="tracker">
+	  {% include google-analytics.html %}
+	</span>
+	
   </body>
 </html>
