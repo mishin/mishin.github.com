@@ -7,14 +7,14 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Fabian Kostadinov
+title:            Nikolay Mishin
 #tagline:          None
-url:              http://fabian-kostadinov.github.io
+url:              http://mishin.github.io
 paginate:         5
 baseurl:          /
 author:
-  name:           Fabian Kostadinov
-  url:            http://fabian-kostadinov.github.io
+  name:           Nikolay Mishin
+  url:            http://mishin.github.io
   email:          none@none.com
   
 #excerpt_separator: <!--more-->
@@ -31,11 +31,11 @@ pages_list:
 # Custom vars
 version:          1.0.0
 github:           
-  repo:           https://github.com/fabian-kostadinov
+  repo:           https://github.com/mishin
   
 comments:
   provider:       disqus
   disqus:
-    short_name:   fabian-kostadinov
+    short_name:   mishin
 
-timezone:         Europe/Zurich
+timezone:         Europe/Moscow
